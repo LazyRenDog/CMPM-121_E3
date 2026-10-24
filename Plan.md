@@ -16,4 +16,4 @@
 
 ## Selection
 
-- [future on-line choice]
+- nothing
