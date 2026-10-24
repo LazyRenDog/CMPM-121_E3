@@ -1,3 +1,6 @@
+import HatUrl from "./hat.png?no-inline";
+import HairUrl from "./hair.jpg?no-inline";
+
 const portrait = document.querySelector<HTMLDivElement>("#portrait")!;
 const spin = document.querySelector<HTMLButtonElement>("#spin")!;
 
@@ -69,3 +72,29 @@ spin.addEventListener("click", () => {
     { duration: 800, easing: "ease-in-out" },
   );
 });
+
+const svgNS = "http://www.w3.org/2000/svg";
+
+face.setAttribute(
+  "aria-label",
+  "Portrait showing a witch hat and hair behind the hat",
+);
+
+// hair
+const hairImage = document.createElementNS(svgNS, "image");
+hairImage.setAttribute("href", HairUrl);
+hairImage.setAttribute("x", "-100");
+hairImage.setAttribute("y", "0");
+hairImage.setAttribute("width", "400");
+hairImage.setAttribute("height", "150");
+hairImage.setAttribute("style", "mix-blend-mode: multiply;");
+face.append(hairImage);
+
+// hat
+const hatImage = document.createElementNS(svgNS, "image");
+hatImage.setAttribute("href", HatUrl);
+hatImage.setAttribute("x", "0");
+hatImage.setAttribute("y", "-170");
+hatImage.setAttribute("width", "200");
+hatImage.setAttribute("height", "300");
+face.append(hatImage);
