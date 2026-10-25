@@ -19,4 +19,5 @@
 
 ## Selection
 
-- [future on-line choice]
+- Criterion: Reads clearly as a spooky witch character with a cohesive style.
+- Decision: Chosen branch B (used a spiky black anime hair image combined with the textured black witch hat image over the SVG face and used an SVG color-matrix filter to remove the hair image's white background)
